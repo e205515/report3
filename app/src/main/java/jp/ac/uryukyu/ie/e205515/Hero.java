@@ -15,28 +15,62 @@ public class Hero {
     private boolean dead;
 
     //参照系メソッド
+    /**
+     * 自身の名前のgetter.
+     * @return　自身の名前
+     */
     public String getName(){
         return name;
     }
+    /**
+     * 自身のHPのgetter.
+     * @return 自身のHP
+     */
     public int getHitPoint() {
         return hitPoint;
     }
+    /**
+     * 自身の攻撃力のgetter.
+     * @return 自身の攻撃力
+     */
     public int getAttack() {
         return attack;
     }
+    /**
+     * 自身の生死状態のgetter.
+     * @return 自身の生死状態
+     */
     public boolean getDead() {
         return dead;
     }
+
+
     //更新系メソッド
+    /**
+     * 自身の名前のsetter.
+     * @param n 自身の名前
+     */
     public void setName(String n) {
         name = n;
     }
+    /**
+     * 自身のHPのsetter.
+     * @param h 自身のHP
+     */
     public void setHitPoint(int h) {
         hitPoint = h;
     }
+    /**
+     * 自身の攻撃力のsetter.
+     * @param a 自身の攻撃力
+     */
     public void setAttack(int a) {
         attack = a;
     }
+    /**
+     * 自身の生死状態のsetter.
+     * @param d 自身の生死状態
+     */
     public void setDead(boolean d) {
         dead = d;
     }
