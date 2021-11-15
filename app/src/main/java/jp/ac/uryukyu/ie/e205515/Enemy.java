@@ -34,19 +34,11 @@ public class Enemy {
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.name, damage);
-        hero.wounded(damage);
-        /** 
-         * hitpointにおいて条件分岐を加える
-        if(hitPoint > 0){
+        if(!dead){
+            int damage = (int)(Math.random()*attack);
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.name, damage);
             hero.wounded(damage);
         }
-        else{
-            hero.wounded(damage = 0);
-        }
-        */
     }
 
     /**
