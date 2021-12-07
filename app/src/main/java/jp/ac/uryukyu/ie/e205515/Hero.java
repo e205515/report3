@@ -9,80 +9,6 @@ package jp.ac.uryukyu.ie.e205515;
  * Created by tnal on 2016/11/13.
  */
 public class Hero extends LivingThing {
-/*
-    private String name;
-    private int hitPoint;
-    private int attack;
-    private boolean dead;
-*/
-    //参照系メソッド
-    /**
-     * 自身の名前のgetter.
-     * @return　自身の名前
-     */
-/*
-     public String getName(){
-        return name;
-    }
-*/
-    /**
-     * 自身のHPのgetter.
-     * @return 自身のHP
-     */
-
-    public int getHitPoint() {
-        return hitPoint;
-    }
-
-    /**
-     * 自身の攻撃力のgetter.
-     * @return 自身の攻撃力
-     */
-/*
-    public int getAttack() {
-        return attack;
-    }
-*/
-    /**
-     * 自身の生死状態のgetter.
-     * @return 自身の生死状態
-     */
-
-    public boolean getDead() {
-        return dead;
-    }
-
-
-    //更新系メソッド
-    /**
-     * 自身の名前のsetter.
-     * @param n 自身の名前
-     */
-    public void setName(String n) {
-        name = n;
-    }
-    /**
-     * 自身のHPのsetter.
-     * @param h 自身のHP
-     */
-    public void setHitPoint(int h) {
-        hitPoint = h;
-    }
-    /**
-     * 自身の攻撃力のsetter.
-     * @param a 自身の攻撃力
-     */
-    public void setAttack(int a) {
-        attack = a;
-    }
-    /**
-     * 自身の生死状態のsetter.
-     * @param d 自身の生死状態
-     */
-    public void setDead(boolean d) {
-        dead = d;
-    }
-
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
      * @param name ヒーロー名
@@ -93,21 +19,9 @@ public class Hero extends LivingThing {
        super(name, maximumHP, attack);
     }
 
-   
-
-
-    /**
-     * Enemyへ攻撃するメソッド。
-     * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
-     * @param e 攻撃対象
-     */
-/*
-    public void attack(Enemy e){
-        int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.getName(), damage);
-        e.wounded(damage);
+    public int getHitPoint() {
+        return this.hitPoint;
     }
-*/
 
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
